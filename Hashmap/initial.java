@@ -8,6 +8,8 @@ public class initial {
     map.put("Use",30);
     map.put("china",20);
     map.put("china", 180);
+    map.put("china", 18);
+
     System.out.println(map);
     if (map.containsKey("china")) {
         System.out.println(true);
@@ -19,6 +21,10 @@ public class initial {
     String s = "china";
     System.out.println(map.get(s)  + "is particuler value of "+s);
     // for(int val:map)
+    for (Map.Entry<String, Integer> entry : map.entrySet()) {
+    System.out.println(entry+"map Entrys" + " and " + map.size());
     }
+    }
+    
 }
 
